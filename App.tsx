@@ -68,7 +68,7 @@ const AppContent: React.FC<{ user: UserProfile, setUser: React.Dispatch<React.Se
   }, [user.waterStats.remindersEnabled, user.waterStats.current, user.waterStats.goal, user.waterStats.reminderIntervalMinutes]);
 
   return (
-    <div className="max-w-md mx-auto bg-black h-[100dvh] shadow-2xl overflow-hidden relative flex flex-col border-x border-neutral-900">
+    <div className="w-full mx-auto bg-black h-[100dvh] shadow-2xl overflow-hidden relative flex flex-col">
       <div className="flex-1 overflow-y-auto overflow-x-hidden no-scrollbar bg-black w-full relative flex flex-col">
         <Routes>
           <Route path="/" element={user.hasOnboarded ? <DietPlan user={user} setUser={setUser} /> : <Navigate to="/onboarding" />} />

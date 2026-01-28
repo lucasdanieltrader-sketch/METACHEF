@@ -11,12 +11,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-neutral-900/95 backdrop-blur-lg border-t border-neutral-800 shadow-[0_-4px_20px_rgba(0,0,0,0.5)] pb-safe z-50">
-      <div className="flex justify-between items-center h-24 px-2 sm:px-4 max-w-md mx-auto overflow-x-auto no-scrollbar">
+      <div className="flex justify-between items-center h-24 px-2 sm:px-4 w-full md:max-w-2xl mx-auto overflow-x-auto no-scrollbar">
         <Link to="/" className={`flex flex-col items-center justify-center min-w-[3.5rem] h-full transition-all active:scale-95 ${isActive('/')}`}>
           <LayoutDashboard size={20} strokeWidth={2.5} />
           <span className="text-[8px] mt-1.5 uppercase tracking-wide">Início</span>
         </Link>
-        
+
         <Link to="/recipes" className={`flex flex-col items-center justify-center min-w-[3.5rem] h-full transition-all active:scale-95 ${isActive('/recipes')}`}>
           <Salad size={20} strokeWidth={2.5} />
           <span className="text-[8px] mt-1.5 uppercase tracking-wide">Receitas</span>
@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
             <Camera size={26} strokeWidth={2.5} />
           </div>
         </Link>
-        
+
         <Link to="/workout" className={`flex flex-col items-center justify-center min-w-[3.5rem] h-full transition-all active:scale-95 ${isActive('/workout')}`}>
           <Dumbbell size={20} strokeWidth={2.5} />
           <span className="text-[8px] mt-1.5 uppercase tracking-wide">Treino</span>
