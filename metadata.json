@@ -1,0 +1,7 @@
+{
+  "name": "Meta Chef",
+  "description": "Seu Companheiro de Nutrição Inteligente. Receitas personalizadas e reconhecimento de alimentos por IA.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
